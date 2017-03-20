@@ -15,7 +15,6 @@ import com.niit.model.Customer;
 
 import com.niit.service.CartService;
 import com.niit.service.CustomerService;
-
 @Controller
 public class CartController {
 	@Autowired
