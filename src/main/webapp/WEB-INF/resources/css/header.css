@@ -1,0 +1,12 @@
+@CHARSET "ISO-8859-1";
+.navbar .navbar-brand{
+	font-family: "Georgia", Times, serif;
+  color:gold;
+  }
+  
+  .navbar{
+  background-color:black;
+  }
+  em{
+  color:violet;
+  }
