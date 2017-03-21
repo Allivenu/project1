@@ -64,7 +64,7 @@
     </li> 
     <security:authorize access="hasRole('ROLE_USER')">
     <c:url var="cart" value="/cart/getCartId"></c:url>
-    <li><a href="${cart }"><span class="on">Cart</span></a></li>
+    <li><a href="${cart }"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
     </security:authorize>
     
      <li><a href=""><span class="on">welcome ${pageContext.request.userPrincipal.name}</span></a></li>

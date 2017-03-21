@@ -2,6 +2,7 @@ package com.niit.dao;
 
 import java.util.List;
 
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,5 +56,20 @@ public class ProductdaoImpl implements Productdao{
 		session.update(product);
 		session.flush();
 		session.close();
+	}
+
+	public byte[] loadImage(int productid){
+		   Session session = sessionFactory.openSession();
+		   Product product = (Product)session.get(Product.class, productid);
+		   byte[] b = product.getPicture();
+		   return b;
+	   }
+	
+	public List<Product> getProductByDiscount(){
+		Session session = sessionFactory.openSession();
+		Query query = session.createQuery("from Product where category.id=?");
+		query.setInteger(0, 2);
+		List<Product> product = query.list();
+		return product;
 	}
 }

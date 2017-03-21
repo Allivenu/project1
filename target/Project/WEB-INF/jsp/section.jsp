@@ -13,10 +13,11 @@
   <link rel="stylesheet" href="${style2}"/> 
 </head>
 <body>
-  <section id="one">
+  <div class="sec">
+  <div class="go">
   <h1>Discover the Difference</h1>
   <h2><a href="http://localhost:8080/Project/all/product/getallproducts">Shop now</a></h2>
-  </section>
-
+  </div>
+  </div>
 </body>
 </html>

@@ -20,6 +20,7 @@ $(function(){
 	});
 });
 </script>
+
 </head>
 <body>
 <div class="container-wrapper">
@@ -62,10 +63,10 @@ $(function(){
 
 </div>
 <div class="form-group">
-<label for="image">Image</label>
-<form:input path="image" type="file"/>
-</div>
-
+   <label for="image">Image</label>
+   <input name="fileUpload" type="file"/>
+  </div>
+  
 <input type="submit" value="Add product" class="btn btn-default">
 </form:form>
 </div>

@@ -6,11 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>list of products</title>
-<style>
-body{
-background-color:lightblue;
-}
-</style>
+
 </head>
 <script>
 $(document).ready(function(){
@@ -22,7 +18,7 @@ $(document).ready(function(){
     });
 });
 </script>
-<body>
+<body background="E:\white-marble.jpg">
 <div class="container">
 <table class="table table-stripped">
 <thead>
@@ -50,6 +46,7 @@ $(document).ready(function(){
 <security:authorize access="hasRole('ROLE_ADMIN')"> 
 <c:url var="delete" value="/admin/product/deleteproduct/${p.id}"></c:url>
            <a href="${delete}"><span class="glyphicon glyphicon-remove"></span></a>
+           
            <c:url var="edit" value="/admin/product/editform/${p.id}"></c:url>
            <a href="${edit}"><span class="glyphicon glyphicon-pencil"></span></a>
            </security:authorize>

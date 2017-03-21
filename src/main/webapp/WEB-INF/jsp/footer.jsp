@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>footer</title>
 <c:url var="style3" value="/resources/css/footer.css"></c:url>
 <link rel="stylesheet" href="${style3}"/>
 </head>

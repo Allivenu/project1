@@ -25,7 +25,16 @@
 
 <c:url var="script8" value="/resources/js/angular.min.js"></c:url>
 <script src="${script8}"></script> 
+ <!-- - --<style>
+  .navbar{
+  height : 60px;
+  position : fixed;
+  background-color : white;
+  width : 100%;
+  z-index : 999;
+  }
   
+  </style>-->
 
 </head>
 <body>

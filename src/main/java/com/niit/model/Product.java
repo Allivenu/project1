@@ -1,12 +1,16 @@
 package com.niit.model;
 
 
+import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.Basic;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
@@ -17,7 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Entity
 @Table(name = "Product")
-public class Product {
+public class Product implements Serializable {
 
 	@Id
 	@GeneratedValue
@@ -30,13 +34,24 @@ public class Product {
 	@Min(value = 3)
 	private double price;
 	private int quantity;
-	Date dtg;
+	
+	private Date dtg;
 	@ManyToOne
 	@JoinColumn(name = "cid")
 	private Category category;
 	@Transient
 	  private MultipartFile image;
+	
+	@Lob
+	@Basic(fetch=FetchType.LAZY)
+	private byte[] picture;
 
+	public byte[] getPicture() {
+	return picture;
+}
+public void setPicture(byte[] picture) {
+	this.picture = picture;
+}
 	public MultipartFile getImage() {
 		return image;
 	}

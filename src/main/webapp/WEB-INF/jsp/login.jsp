@@ -8,16 +8,23 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>login</title>
 <style>
+body{
+color : white;
+
+}
+form{
+color : red;
+
+}
   .move{
-    margin:10%;
-    padding:10%;
-    
+  
+  padding : 200px;
   }
 </style>
 </head>
-<body>
+<body background="E:\laptop (1).jpg">
 <div class="move" >
 <c:url var="security" value="j_spring_security_check"></c:url>
 ${error }

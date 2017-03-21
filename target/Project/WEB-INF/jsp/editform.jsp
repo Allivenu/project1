@@ -67,7 +67,10 @@
 </c:forEach>
 </div>
  
-
+<div class="form-group">
+<label for="image">Image</label>
+<input name="fileUpload" type="file"/>
+</div>
 
   <input type="submit" value="Edit Product" class="btn btn-default">
    

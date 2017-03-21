@@ -37,7 +37,7 @@ public class CartController {
   @RequestMapping("/cart/getCart/{cartId}")
   public @ResponseBody Cart getCart(@PathVariable int cartId){
 	  Cart cart = cartService.getCart(cartId);
-	  System.out.println("i am in response "+cart.getId());
+	  System.out.println("i am in response "+cart.getCartItems());
 	  return cart;
   }
 }

@@ -4,25 +4,28 @@ app.controller("ProductController",function($scope,$http){
 	$scope.addToCart = function(productId){
 		
 		$http.put('http://localhost:8081/Project/cart/addCartItem/'+productId).then(function(){
-			alert("hello");
+			alert("successfully added to the cart");
 		});
 	}
   
 	$scope.getCart=function(cartId){
+		
 		$scope.cartId = cartId;
+		
 		$http.get('http://localhost:8081/Project/cart/getCart/'+cartId).then(function(data){
 			$scope.cart=data;
+			console.log($scope.cart);
 		});
 	}
   $scope.removeFromCart=function(cartItemId){
 	  
-	  $http.put('http://localhost:8080/Project/cart/removeCartItem/'+cartItemId).success(function(){
+	  $http.put('http://localhost:8081/Project/cart/removeCartItem/'+cartItemId).success(function(){
 		  $scope.getCart($scope.cartId);
 	  });
   }
   $scope.clearCart=function(){
 	
-	 $http.put('http://localhost:8080/Project/cart/removeAllCartItems/'+$scope.cartId).success(function(){
+	 $http.put('http://localhost:8081/Project/cart/removeAllCartItems/'+$scope.cartId).success(function(){
 		 $scope.getCart($scope.cartId);
 	 })
   }

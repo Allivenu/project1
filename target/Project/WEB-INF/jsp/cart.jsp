@@ -8,12 +8,26 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Cart</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-  <c:url var="style" value="/resources/css/cart.css"></c:url>
-  <link rel="stylesheet" href="${style}"/>
+  
+  <style>
+  body{
+  margin-top:2%;
+  margin-left:4%;
+  
+  }
+  table{
+	  margin-top : 2%;
+	  margin-left:2%;
+	  width : 100%;
+  }
+  </style>
+  
 </head>
 <body>
+
+
 <div id="cart">
  <div ng-app="app" ng-controller="ProductController">
    <div ng-init="getCart(${cartId})">
@@ -50,9 +64,14 @@
       </table>
    <div id="totalprice"> 
       <span id="sub">SubTotal: INR {{calculateGrandTotal()}}</span>
-      </div>
+      </div> 
+      
+       
+       <!-- <div ng-repeat="cartItem in cart">
+           <p>{{cartItem}}</p>
+       </div> -->
+      
       <div id="content">
-      <p>Discount,shipping and tax will be calculated in checkout.</p>
      </div>
    </div>
 <c:url var="script7" value="/resources/js/controller.js"></c:url>

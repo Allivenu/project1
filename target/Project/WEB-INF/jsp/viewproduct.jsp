@@ -11,6 +11,11 @@
 <body>
 <div ng-app="app" ng-controller="ProductController">
 
+<div id="viewimage">
+  <c:url var="sr" value="/all/product/image/${product.id}"></c:url>
+  <img src="${sr }" height="300px" width="300px"/>
+</div>
+
 <div class="page-header">
 <b>PRODUCT DETAILS</b>
 </div>

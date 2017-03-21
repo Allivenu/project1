@@ -13,11 +13,12 @@
   .move{
     margin:10%;
     padding:10%;
+    
   }
 </style>
 </head>
 <body>
-<div class="move">
+<div class="move" >
 <c:url var="security" value="j_spring_security_check"></c:url>
 ${error }
 ${logout }

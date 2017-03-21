@@ -33,5 +33,13 @@ public Product getProductById(int id){
 		productdao.updateProduct(product);
 		
 	}
+	public byte[] loadImage(int productid)
+	{
+		return productdao.loadImage(productid);
+	}
+	public List<Product> getProductByDiscount()
+	{
+		return productdao.getProductByDiscount();
+	}
 }
 

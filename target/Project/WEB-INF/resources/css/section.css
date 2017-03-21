@@ -3,17 +3,30 @@ h1{
 	color:white;
 	font-style:italic;
 	text-align:center;
+	padding:400px 100px 10px 100px;
 }
 h2{
 	color:red;
 	font-size:50px;
 	text-align:center;
+	padding:10px;
 }
 a{
 	color:red;
 }
-body {
-    background-color: black;
 
-    
+.sec {
+	height : 1000px;
+	width :100%;
+    background-image:url("E:\Laptop.jpg");
+    background-repeat:no-repeat;
+ 
+}
+
+.go {
+	opacity :0.2;
+	height :1000px;
+	width :50%;
+	background-color:green;
+	filter: alpha(opacity=40);
 }

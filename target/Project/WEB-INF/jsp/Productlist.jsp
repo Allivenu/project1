@@ -50,6 +50,7 @@ $(document).ready(function(){
 <security:authorize access="hasRole('ROLE_ADMIN')"> 
 <c:url var="delete" value="/admin/product/deleteproduct/${p.id}"></c:url>
            <a href="${delete}"><span class="glyphicon glyphicon-remove"></span></a>
+           
            <c:url var="edit" value="/admin/product/editform/${p.id}"></c:url>
            <a href="${edit}"><span class="glyphicon glyphicon-pencil"></span></a>
            </security:authorize>
