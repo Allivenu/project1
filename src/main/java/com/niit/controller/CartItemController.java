@@ -28,6 +28,9 @@ import com.niit.service.Productservice;
 @Controller
 public class CartItemController 
 {	 
+	//int count=1;
+	//static List<Product> listproduct  = new ArrayList<Product>();
+	//static List<Product> norepeat = new ArrayList<Product>();
 	
   @Autowired
   private CartItemService cartItemService;
