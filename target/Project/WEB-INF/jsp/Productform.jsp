@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+	<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
     <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
@@ -12,7 +12,7 @@
       <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
       <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
-<title>Insert title here</title>
+<title>productform</title>
 <script>
 $(function(){
 	$('input[name=dtg]').datepicker({
@@ -20,9 +20,17 @@ $(function(){
 	});
 });
 </script>
+<style>
+body{
+color : white;
+margin-left : 3%;
+margin-right : 3%;
+}
+</style>
 
 </head>
-<body>
+
+<body background="E:\background.jpg">
 <div class="container-wrapper">
 <div class="container">
 <c:url var="addAction" value="addproduct"></c:url>
@@ -32,27 +40,27 @@ $(function(){
 <form:hidden path="id"/>
 </div>
  <div class="form-group">
-<label for="name">product name</label>
+<label for="name">Product name</label>
 <form:input path="name" class="form-control"/>
 <form:errors path="name" cssstyle="color:#ff0000"></form:errors>
 </div>
 <div class="form-group">
-<label for="description">description</label>
+<label for="description">Description</label>
 <form:input path="description" class="form-control"/>
 <form:errors path="description" cssstyle="color:#ff0000"></form:errors>
 </div>
 <div class="form-group">
-<label for="price">price</label>
+<label for="price">Price</label>
 <form:input path="price" class="form-control"/>
 <form:errors path="price" cssstyle="color:#ff0000"></form:errors>
 </div>
 <div class="form-group">
-<label for="quantity">quantity</label>
+<label for="quantity">Quantity</label>
 <form:input path="quantity" class="form-control"/>
 </div>
 <div class="form-group">
-<label for="dtg">manufactured date</label>
-<form:input path="dtg" type="Date" class="form-control"/>
+<label for="dtg">Manufactured Date</label>
+<form:input path="dtg"  class="form-control"/>
 </div>
 
 <div class="form-group">

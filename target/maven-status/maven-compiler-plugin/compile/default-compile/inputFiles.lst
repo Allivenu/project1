@@ -1,5 +1,6 @@
 D:\NIIT\Project\src\main\java\com\niit\dao\ProductdaoImpl.java
 D:\NIIT\Project\src\main\java\com\niit\dao\CartDao.java
+D:\NIIT\Project\src\main\java\com\niit\dao\CustomerOrderDaoImpl.java
 D:\NIIT\Project\src\main\java\com\niit\service\Productserviceimpl.java
 D:\NIIT\Project\src\main\java\com\niit\service\CustomerService.java
 D:\NIIT\Project\src\main\java\com\niit\dao\CustomerDao.java
@@ -10,6 +11,8 @@ D:\NIIT\Project\src\main\java\com\niit\service\CartService.java
 D:\NIIT\Project\src\main\java\com\niit\controller\CartController.java
 D:\NIIT\Project\src\main\java\com\niit\controller\CartItemController.java
 D:\NIIT\Project\src\main\java\com\niit\dao\CartItemDaoImpl.java
+D:\NIIT\Project\src\main\java\com\niit\dao\CustomerOrderDao.java
+D:\NIIT\Project\src\main\java\com\niit\model\CustomerOrder.java
 D:\NIIT\Project\src\main\java\com\niit\service\Categoryservice.java
 D:\NIIT\Project\src\main\java\com\niit\model\Product.java
 D:\NIIT\Project\src\main\java\com\niit\dao\CustomerDaoImpl.java
@@ -28,6 +31,7 @@ D:\NIIT\Project\src\main\java\com\niit\service\Productservice.java
 D:\NIIT\Project\src\main\java\com\niit\model\CartItem.java
 D:\NIIT\Project\src\main\java\com\niit\controller\ProductController.java
 D:\NIIT\Project\src\main\java\com\niit\dao\Categorydaoimpl.java
+D:\NIIT\Project\src\main\java\com\niit\controller\CustomerOrderController.java
 D:\NIIT\Project\src\main\java\com\niit\model\Category.java
 D:\NIIT\Project\src\main\java\com\niit\model\ShippingAddress.java
 D:\NIIT\Project\src\main\java\com\niit\service\Categoryserviceimpl.java

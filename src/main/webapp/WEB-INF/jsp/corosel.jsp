@@ -17,6 +17,9 @@
   }
   </style>
 </head>
+<c:url var="iv" value="/resources/Img/fish.jpg"></c:url>
+<c:url var="it" value="/resources/Img/kid.jpg"></c:url>
+<c:url var="is" value="/resources/Img/tea.jpg"></c:url>
 <body>
 
 <div class="container-fluid">

@@ -10,7 +10,7 @@
 <title>Home</title>
 
 </head>
-<body style="background-color:lightblue;">
+<body id="home1" style="background-color:lightblue;">
    <div class="container" style="margin-top:150px">
    <%@ include file="corosel.jsp" %>
    <%@ include file="section.jsp" %>

@@ -5,6 +5,8 @@ import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import com.niit.dao.Productdao;
@@ -13,11 +15,16 @@ import com.niit.model.Product;
 @Repository
 public class ProductdaoImpl implements Productdao{
 	
+	private static final Logger log=LoggerFactory.getLogger(ProductdaoImpl.class);
+	
+	
 	@Autowired
 	private SessionFactory sessionFactory;
 	public ProductdaoImpl(SessionFactory sessionFactory)
 	{
+		log.info("session start");
 		this.sessionFactory=sessionFactory;
+		log.info("session creaetd");
 		System.out.println("creating instance");
 	}
     

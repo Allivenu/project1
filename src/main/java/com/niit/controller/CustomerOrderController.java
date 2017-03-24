@@ -44,7 +44,7 @@ public String getCartId(){
 
 @RequestMapping("/order/{cartId}")
 public String createOrder(@PathVariable int cartId){
-		
+		System.out.println("show me cart page");
 	return "redirect:/checkout?cartId="+cartId;
 }
 }

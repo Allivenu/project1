@@ -27,7 +27,7 @@
   
   <c:url var="addAction" value="/admin/product/editProduct"></c:url>
 
-	<form:form action="${addAction}" modelAttribute="product1" id="btn-add" method="post">
+	<form:form action="${addAction}" modelAttribute="product1" id="btn-add" method="post" enctype="multipart/form-data">
    <%-- 
   <form:form  modelAttribute="product1" method="post" action="editProduct"> --%> 
   <div class="form-group">
@@ -57,7 +57,7 @@
      
 <div class="form-group">
 <label for="dtg">manufactured date</label>
-<form:input path="dtg" type ="Date" class="form-control"/>
+<form:input path="dtg"  class="form-control"/>
 </div>
 
 <div class="form-group">
@@ -68,9 +68,9 @@
 </div>
  
 <div class="form-group">
-<label for="image">Image</label>
-<input name="fileUpload" type="file"/>
-</div>
+   <label for="image">Image</label>
+   <input name="fileUpload" type="file"/>
+  </div>
 
   <input type="submit" value="Edit Product" class="btn btn-default">
    

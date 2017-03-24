@@ -48,12 +48,12 @@
         </tr>
         </thead>
        
-       <tr ng-repeat="ca in cart.cartItems">
+       <tr ng-repeat="ca in cart.data.cartItems">
        <td>
        <c:url var="sr" value="/all/product/image/{{ca.product.id}}"></c:url>
   <img src="${sr }" height="150px" width="150px"/>
        
-       </td>
+       </td> 
          <td id="item">{{ca.product.name}}</td>
          <td class="quan">{{ca.quantity}}</td>
          <td class="total">{{ca.totalPrice}}</td>
@@ -62,15 +62,12 @@
        </tr>
        
       </table>
-   <div id="totalprice"> 
+    <div id="totalprice"> 
       <span id="sub">SubTotal: INR {{calculateGrandTotal()}}</span>
-      </div> 
+      </div>  
       
        
-       <!-- <div ng-repeat="cartItem in cart">
-           <p>{{cartItem}}</p>
-       </div> -->
-      
+       
       <div id="content">
      </div>
    </div>

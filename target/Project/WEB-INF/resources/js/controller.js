@@ -14,25 +14,26 @@ app.controller("ProductController",function($scope,$http){
 		
 		$http.get('http://localhost:8081/Project/cart/getCart/'+cartId).then(function(data){
 			$scope.cart=data;
-			console.log($scope.cart);
+			
+			console.log($scope.cart.data.cartItems[0].product.name);
 		});
 	}
   $scope.removeFromCart=function(cartItemId){
 	  
-	  $http.put('http://localhost:8081/Project/cart/removeCartItem/'+cartItemId).success(function(){
+	  $http.put('http://localhost:8081/Project/cart/removeCartItem/'+cartItemId).then(function(){
 		  $scope.getCart($scope.cartId);
 	  });
   }
   $scope.clearCart=function(){
 	
-	 $http.put('http://localhost:8081/Project/cart/removeAllCartItems/'+$scope.cartId).success(function(){
+	 $http.put('http://localhost:8081/Project/cart/removeAllCartItems/'+$scope.cartId).then(function(){
 		 $scope.getCart($scope.cartId);
 	 })
   }
   $scope.calculateGrandTotal=function(){
 	  var grandTotal = 0.0;
-	  for(i=0;i<$scope.cart.cartItems.length;i++){
-		   grandTotal = grandTotal+$scope.cart.cartItems[i].totalPrice;
+	  for(i=0;i<$scope.cart.data.cartItems.length;i++){
+		   grandTotal = grandTotal+$scope.cart.data.cartItems[i].totalPrice;
 	  }
 	  return grandTotal;
   }

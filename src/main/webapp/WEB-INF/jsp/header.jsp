@@ -25,17 +25,7 @@
 
 <c:url var="script8" value="/resources/js/angular.min.js"></c:url>
 <script src="${script8}"></script> 
- <!-- - --<style>
-  .navbar{
-  height : 60px;
-  position : fixed;
-  background-color : white;
-  width : 100%;
-  z-index : 999;
-  }
-  
-  </style>-->
-
+ 
 </head>
 <body>
 
@@ -45,9 +35,10 @@
     <a class="navbar-brand" href="#"><strong>genus<em>cart</em></strong></a>
 </div>
         <ul class="nav navbar-nav">
-          <li class="pull-left"><a href="home">Home</a></li>
+        <c:url var="home" value="/home"></c:url>
+          <li class="pull-left"><a href="${home }">Home</a></li>
            
-           <li class="pull-left"><a href="aboutus">About</a></li>
+           <!-- - -<li class="pull-left"><a href="aboutus">About</a></li>--->
            
            <c:if test="${pageContext.request.userPrincipal.name!=null }">
            <security:authorize access="hasRole('ROLE_ADMIN')">

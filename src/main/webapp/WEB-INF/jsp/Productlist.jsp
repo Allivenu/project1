@@ -6,7 +6,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>list of products</title>
+<style>
 
+th{
+color : white;
+}
+</style>
 </head>
 <script>
 $(document).ready(function(){
@@ -18,7 +23,7 @@ $(document).ready(function(){
     });
 });
 </script>
-<body background="E:\white-marble.jpg">
+<body background="E:\hd-background.jpg">
 <div class="container">
 <table class="table table-stripped">
 <thead>
@@ -33,7 +38,7 @@ $(document).ready(function(){
 <c:forEach var="p" items="${products}">
 <tr>
   <td>
-              <c:url var="sr" value="/resources/images/${p.id}.png"></c:url>
+              <c:url var="sr" value="/all/product/image/${p.id}"></c:url>
               <img src="${sr }" height="100px" width="100px"/>
             </td>
             

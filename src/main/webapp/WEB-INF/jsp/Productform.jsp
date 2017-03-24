@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+	<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
     <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
@@ -29,6 +29,7 @@ margin-right : 3%;
 </style>
 
 </head>
+
 <body background="E:\background.jpg">
 <div class="container-wrapper">
 <div class="container">
@@ -59,7 +60,7 @@ margin-right : 3%;
 </div>
 <div class="form-group">
 <label for="dtg">Manufactured Date</label>
-<form:input path="dtg" type="Date" class="form-control"/>
+<form:input path="dtg"  class="form-control"/>
 </div>
 
 <div class="form-group">

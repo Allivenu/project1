@@ -5,10 +5,10 @@
 <html>
 <head>
 
-<title>Insert title here</title>
+<title>view</title>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
-<body>
+<body id="view" background="E:\nice-background.jpg">
 <div ng-app="app" ng-controller="ProductController">
 
 <div id="viewimage">
