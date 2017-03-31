@@ -17,18 +17,26 @@
    <div class="form1">
    <label for="firstname">First Name</label>
    <form:input path="cart.customer.firstname" cssStyle="border:2px solid rgba(0,0,0,0.2)"/>
+   <form:errors path="cart.customer.firstname" cssstyle="color:#ff0000"></form:errors>
+   
    </div>
    <div class="form">
    <label for="lastname">Last Name</label>
    <form:input path="cart.customer.lastname" cssStyle="border:2px solid rgba(0,0,0,0.2)"/>
+   <form:errors path="cart.customer.lastname" cssstyle="color:#ff0000"></form:errors>
+   
    </div>
    <div class="form">
    <label for="email">Email</label>
    <form:input path="cart.customer.email" cssStyle="border:2px solid rgba(0,0,0,0.2)"/>
+   <form:errors path="cart.customer.email" cssstyle="color:#ff0000"></form:errors>
+   
    </div>
    <div class="form">
    <label for="phonenumber">Phone Number</label>
    <form:input path="cart.customer.phonenumber" cssStyle="border:2px solid rgba(0,0,0,0.2)"/>
+   <form:errors path="cart.customer.phonenumber" cssstyle="color:#ff0000"></form:errors>
+   
    </div>
    <button name="_eventId_customerInfoCollected">Next</button>
    <button name="_eventId_cancel">cancel</button>

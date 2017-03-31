@@ -32,7 +32,7 @@ ${logout }
  ${registersuccess}
 <form action="${security}" method="post">
 Enter UserName <input type="text" name="j_username"><br><br>
-Enter Password <input type="text" name="j_password"><br>
+Enter Password <input type="password" name="j_password"><br>
 <input type="submit" value="submit">
 </form>
 </div>

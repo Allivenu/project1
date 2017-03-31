@@ -22,7 +22,7 @@ $(function(){
 </script>
 <style>
 body{
-color : white;
+color : green;
 margin-left : 3%;
 margin-right : 3%;
 }
